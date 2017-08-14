@@ -152,6 +152,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AccountBook.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\AccountService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

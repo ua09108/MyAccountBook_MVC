@@ -11,8 +11,8 @@ namespace MyAccountBook_MVC.Controllers
     {
         public ActionResult Index()
         {
-            SkillTreeHomeworkEntities _db = new SkillTreeHomeworkEntities();
-            return View(_db.AccountBook.ToList());
+            AccountService _accService = new AccountService();
+            return View(_accService.GetData());
         }
 
         public ActionResult About()
