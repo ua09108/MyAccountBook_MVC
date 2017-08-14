@@ -45,3 +45,8 @@ D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\
 D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\obj\Debug\MyAccountBook_MVC.csprojResolveAssemblyReference.cache
 D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\obj\Debug\MyAccountBook_MVC.dll
 D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\obj\Debug\MyAccountBook_MVC.pdb
+D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\EntityFramework.dll
+D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\EntityFramework.SqlServer.dll
+D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\EntityFramework.xml
+D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\EntityFramework.SqlServer.xml
+D:\Fun_Coding\Git\MVC\MyAccountBook_MVC\MyAccountBook_MVC\MyAccountBook_MVC\bin\zh-Hant\EntityFramework.resources.dll

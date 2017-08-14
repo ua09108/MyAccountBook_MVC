@@ -11,13 +11,8 @@ namespace MyAccountBook_MVC.Controllers
     {
         public ActionResult Index()
         {
-            List<AccountItemClass> AccountItemModel = new List<AccountItemClass>
-            {
-                new AccountItemClass() {Type="支出",AccountDate=new DateTime(2016,1,1),Payment=100 },
-                new AccountItemClass() {Type="支出",AccountDate=new DateTime(2017,1,1),Payment=200 },
-                new AccountItemClass() {Type="支出",AccountDate=new DateTime(2018,1,1),Payment=300 },
-            };
-            return View(AccountItemModel);
+            SkillTreeHomeworkEntities _db = new SkillTreeHomeworkEntities();
+            return View(_db.AccountBook.ToList());
         }
 
         public ActionResult About()
