@@ -1,4 +1,6 @@
-﻿@model IEnumerable<MyAccountBook_MVC.Models.AccountBook>
+﻿@using MyAccountBook_MVC.Helper
+
+@model IEnumerable<MyAccountBook_MVC.Models.AccountBook>
 
 <div class="col-md-12">
     <table class="table table-bordered table-hover">
@@ -15,7 +17,7 @@
         {
             <tr>
                 <td>@(i++)</td>
-                <td>@(@Html.DisplayFor(d => item.Categoryyy).ToString() == "1"?"收入":"支出")</td>
+                <td>@Html.SetColor((@Html.DisplayFor(d => item.Categoryyy).ToString() == "1" ? "收入" : "支出"))</td>
                 <td>@Html.DisplayFor(d => item.Dateee)</td>
                 <td>@Html.DisplayFor(d => item.Amounttt)</td>
             </tr>
