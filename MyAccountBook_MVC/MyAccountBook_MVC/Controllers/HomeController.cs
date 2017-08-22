@@ -9,15 +9,38 @@ namespace MyAccountBook_MVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly AccountService _accService;
+
+        public HomeController()
+        {
+            _accService = new AccountService();
+        }
+
         public ActionResult Index()
         {
-            AccountService _accService = new AccountService();
             return View(_accService.GetData());
         }
 
         public ActionResult Create()
         {
             return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult Create([Bind(Include = "Id,Categoryyy,Amounttt,Dateee,Remarkkk")] AccountBook accountbook)
+        {
+            if (ModelState.IsValid)
+            {
+                _accService.Add(accountbook);
+                _accService.Save();
+                //return RedirectToAction("Index");
+
+                return View();
+
+            }
+
+            return View(accountbook);
 
         }
 

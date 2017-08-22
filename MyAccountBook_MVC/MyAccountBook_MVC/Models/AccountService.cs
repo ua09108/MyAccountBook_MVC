@@ -18,5 +18,17 @@ namespace MyAccountBook_MVC.Models
         {
             return _db.AccountBook.ToList();
         }
+
+        public void Add(AccountBook accountbook)
+        {
+            accountbook.Dateee = DateTime.Now;
+            accountbook.Id = Guid.NewGuid();
+            _db.AccountBook.Add(accountbook);
+        }
+
+        public void Save()
+        {
+            _db.SaveChanges();
+        }
     }
 }
