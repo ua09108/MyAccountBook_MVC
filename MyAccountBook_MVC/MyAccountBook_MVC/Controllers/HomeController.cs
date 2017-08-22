@@ -15,6 +15,12 @@ namespace MyAccountBook_MVC.Controllers
             return View(_accService.GetData());
         }
 
+        public ActionResult Create()
+        {
+            return View();
+
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
